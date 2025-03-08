@@ -8,11 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 // Use environment variables or dynamically determine the base URL
-const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL ||
-  (process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "https://snapbeautify.denistarasenko.com");
+const baseUrl = "https://snapbeautify.denistarasenko.com";
 
 export const metadata: Metadata = {
   title: "SnapBeautify - Beautify Your Screenshots Instantly",
